@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOTP Authenticator: 2FA code generator with QR import and encrypted local vault</title>
+    <meta name="description" content="TOTP/HOTP code generator (RFC 6238/4226) with otpauth:// parsing, QR import from image, Google Authenticator migration decode and an encrypted local vault." />
+    <meta name="keywords" content="totp, 2fa, authenticator, otpauth, google authenticator migration, rfc 6238, hotp" />
+    <meta name="author" content="Volodymyr Kopytsia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f4f5f7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="canonical" href="https://hermes98761234.github.io/totp-authenticator/" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="TOTP" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TOTP Authenticator" />
+    <meta property="og:url" content="https://hermes98761234.github.io/totp-authenticator/" />
+    <meta property="og:title" content="A TOTP authenticator that lives in your browser" />
+    <meta property="og:description" content="RFC 6238 codes, QR import, Google Authenticator migration, encrypted vault." />
+    <meta property="og:image" content="https://hermes98761234.github.io/totp-authenticator/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="A TOTP authenticator that lives in your browser" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="A TOTP authenticator that lives in your browser" />
+    <meta name="twitter:description" content="RFC 6238 codes, QR import, Google Authenticator migration, encrypted vault." />
+    <meta name="twitter:image" content="https://hermes98761234.github.io/totp-authenticator/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TOTP Authenticator",
+        "url": "https://hermes98761234.github.io/totp-authenticator/",
+        "description": "TOTP/HOTP code generator (RFC 6238/4226) with otpauth:// parsing, QR import from image, Google Authenticator migration decode and an encrypted local vault.",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": ["en", "uk"],
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Volodymyr Kopytsia" }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>This tool needs JavaScript.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
